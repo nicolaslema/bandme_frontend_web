@@ -1,25 +1,38 @@
 import React from 'react'
+import band from '../../assets/band.jpg'
+
 
 const Hero = () => {
   return (
     <div>
-        <section className='relative'>
-            <div className='container flex flex-col lg:flex-row items-center gap-12 mt-14 lg:mt-28'>
-                <div className="flex flex-1 flex-col item-center lg:items-start "> 
-                    <h1 className='text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6'> A Centralized Music Social-Network</h1>
-                </div>
-                <p className="text-lg text-center lg:text-left mb-6">
-                    A clean and simple applicacion to managing, share and enhance your music carear. Download the mobile applicacion for free
-                    or try our anual plan for more benefits.
-                </p>
-               
-               
-            </div>
-            <div className="flex justify-center flex-wrap gap-6 ">
-                    <button type='button' className='btn btn-orange'>Download</button>
-                    <button type='button'className='btn btn-white'>Info</button>
-                </div>
-        </section>
+       <section class="relative">
+      <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
+     
+        <div class="flex flex-1 flex-col items-center lg:items-start">
+          <h2 class="text-bookmark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">
+            Music Social network
+          </h2>
+          <p class="text-bookmark-grey text-lg text-center lg:text-left mb-6">
+            A clean and simple Mobile applicacion to enhance your music career. Share, connect and discover the music arround you. 
+            Try it for free or check out our anual premium plan for more benefits
+          </p>
+          <div class="flex justify-center flex-wrap gap-6">
+            <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black">
+              Download for Android
+            </button>
+            <button type="button" class="btn btn-white hover:bg-bookmark-purple hover:text-white">
+              More Info
+            </button>
+          </div>
+        </div>
+        
+        <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+          <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src={band} alt="" />
+        </div>
+      </div>
+    
+  
+    </section>
 
     </div>
   )

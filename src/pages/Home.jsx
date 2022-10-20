@@ -8,6 +8,7 @@ const Home = () => {
       <div className=''>
       <NavBar/>
       <Hero/>
+     
       </div>
 
     
