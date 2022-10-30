@@ -14,16 +14,18 @@ const About = () => {
                 <div class=" flex flex-col items-center px-5 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div class="flex flex-col w-full max-w-3xl mx-auto prose  prose-blue">
             <div class="w-full mx-auto">
-            <h1>BANDME centralizes all your music-related activity in one place.</h1>
-                <h2>Discover, Share and connect with other musicians, bands and establishments to improve your musical career</h2>
-                <p>Bandme allows you to share your music, form bands, establish connections with bars, clubs, pubs, discover new artists and much more.</p>
+            <h1 className='text-5xl text-Poppins font-bold text-center mb-4'>Centralize all your music-related activity in one place.</h1>
+                <h2 className='text-center text-lg text-Poppins '>Discover, Share and connect with other musicians, bands and establishments to improve your musical career
+                Bandme allows you to share your music, form bands, establish connections with bars, clubs, pubs, discover new artists and much more.
+                </h2>
+                
 
             </div>
         </div>
 
-        <div class="shadow-lg flex flex-col items-center pb-10 mx-auto my-10 border-b border-gray-200 max-w-7xl sm:flex-row">
-            <div class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 text-neutral-600 rounded-full bg-gray-50 sm:mr-10">
-            <i className="text-5xl text-bandme_orange"><FaUser/></i>
+        <div class="shadow-2xl flex flex-col items-center  pb-10 mx-auto my-10 border-b border-gray-400 max-w-7xl sm:flex-row  hover:text-black py-4 px-4 rounded ">
+            <div class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 text-neutral-600 rounded-full bg-transparent sm:mr-10  ">
+            <i className="text-5xl text-bandme_dark"><FaUser/></i>
             </div>
             <div class=" flex-grow mt-6 prose text-center sm:text-left sm:mt-0 prose-md">
                 <h2 className='text-center mb-3 text-lg uppercase'>Artist</h2>
@@ -32,9 +34,9 @@ const About = () => {
         </div>
 
 
-        <div class="shadow-lg flex flex-col items-center pb-10 mx-auto my-10 border-b border-gray-200 max-w-7xl sm:flex-row">
-            <div class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 text-neutral-600 rounded-full bg-gray-50 sm:mr-10">
-            <i className="text-5xl text-bandme_orange"><HiUserGroup/></i>
+        <div class="shadow-2xl flex flex-col items-center pb-10 mx-auto my-10 border-b border-gray-400 max-w-7xl sm:flex-row py-4 px-4 rounded">
+            <div class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 text-neutral-600 rounded-full bg-transparent sm:mr-10">
+            <i className="text-5xl text-bandme_dark"><HiUserGroup/></i>
             </div>
             <div class="flex-grow mt-6 prose text-center sm:text-left sm:mt-0 prose-md">
                 <h2 className='text-center mb-3 text-lg uppercase' >Band</h2>
@@ -43,9 +45,9 @@ const About = () => {
         </div>
 
 
-        <div class="shadow-lg flex flex-col items-center pb-10 mx-auto my-10 border-b border-gray-200 max-w-7xl sm:flex-row">
-            <div class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 text-neutral-600 rounded-full bg-gray-50 sm:mr-10">
-            <i className="text-5xl text-bandme_orange"><MdStoreMallDirectory/></i>
+        <div class="shadow-2xl flex flex-col items-center pb-10 mx-auto my-10 border-b border-gray-400 max-w-7xl sm:flex-row py-4 px-4 rounded">
+            <div class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 text-neutral-600 rounded-full bg-transparent sm:mr-10">
+            <i className="text-5xl text-bandme_dark"><MdStoreMallDirectory/></i>
             </div>
             <div class="flex-grow mt-6 prose text-center sm:text-left sm:mt-0 prose-md">
                 <h2 className='text-center mb-3 text-lg uppercase'>Establishment </h2>
