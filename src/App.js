@@ -1,6 +1,6 @@
 
 
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route, useParams} from 'react-router-dom'
 
 //paginas
 import Home from './pages/Home';
@@ -13,7 +13,7 @@ function App() {
 
     <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path='/event' element={<Event/>}/>
+      <Route path='/event/:id' element={<Event/>}/>
     </Routes>
   </Router>
 }
