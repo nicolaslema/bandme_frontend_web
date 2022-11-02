@@ -9,16 +9,11 @@ const EventDetails = () => {
   
   useEffect(()=>{
 
- 
-
-    
     const fetchPostbyId =  async(id)=>{
       const response = await fetch(url);
       const data = await response.json()
       setEventInfo(data.data);
     
-      
-
     }
      fetchPostbyId(id);
   
