@@ -18,6 +18,7 @@ module.exports = {
       colors:{
         "bandme_orange" :"#e09016",
         "bandme_dark" : "#212121",
+        "clr" : "#04fc43"
         
       },
     },
