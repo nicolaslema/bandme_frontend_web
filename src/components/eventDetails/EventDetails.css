@@ -1,0 +1,47 @@
+.fun{
+  background-image:  var(--gradient);
+  background-position: right;
+  background-size: 300%;
+  transition: background-position 1s;
+  animation:  bg-animation 10s infinite alternate;
+ 
+}
+
+
+.main{
+  isolation: isolate;
+}
+
+@keyframes bg-animation {
+  0% {background-position: left;}
+  100% {background-position: right;}
+  
+}
+
+
+
+.poly-1 {
+  clip-path: polygon(0 0, 100% 0, 84% 76%, 0% 100%);
+  inset: 0;
+  padding: 1em;
+  z-index: -1;
+}
+
+
+
+.titulo-evento{
+  z-index: 1;
+}
+
+
+
+:root{
+  --gradient: linear-gradient(
+    45deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ffc75f,
+    #f9f871
+  );
+}
