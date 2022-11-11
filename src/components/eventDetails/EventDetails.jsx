@@ -52,6 +52,7 @@ const EventDetails = () => {
       time={eventInfo.time}
       description={eventInfo.description}
       street = {eventInfo.street}
+      image_url = {eventInfo.image_url}
       street_number = {eventInfo.street_number}
       profile_photo = {eventInfo.profile_photo}
       first_name = {eventInfo.first_name}
