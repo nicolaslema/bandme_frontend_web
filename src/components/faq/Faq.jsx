@@ -3,9 +3,9 @@ import React from 'react'
 const Faq = () => {
   return (
     <div>
-        <section className="bg-white dark:bg-gray-900 mb-24 mt-24">
+        <section className="bg-white  mb-24 mt-24">
     <div className="container px-6 py-12 mx-auto">
-        <h1 className="text-2xl font-semibold text-gray-800 lg:text-4xl dark:text-white">Frequently asked questions.</h1>
+        <h1 className="text-2xl font-semibold text-gray-800 lg:text-4xl ">Frequently asked questions.</h1>
 
         <div className="grid grid-cols-1 gap-8 mt-8 lg:mt-16 md:grid-cols-2 xl:grid-cols-3">
             <div>
@@ -16,9 +16,9 @@ const Faq = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-xl font-semibold text-gray-700 dark:text-white">What can i expect at my first consultation?</h1>
+                    <h1 className="text-xl font-semibold text-gray-700 ">What can i expect at my first consultation?</h1>
 
-                    <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">
+                    <p className="mt-2 text-sm text-gray-500 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.
                     </p>
                 </div>
@@ -32,9 +32,9 @@ const Faq = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-xl font-semibold text-gray-700 dark:text-white">What are your opening house?</h1>
+                    <h1 className="text-xl font-semibold text-gray-700 ">What are your opening house?</h1>
 
-                    <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">
+                    <p className="mt-2 text-sm text-gray-500 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.
                     </p>
                 </div>
@@ -48,9 +48,9 @@ const Faq = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-xl font-semibold text-gray-700 dark:text-white">Do i need a referral?</h1>
+                    <h1 className="text-xl font-semibold text-gray-700 ">Do i need a referral?</h1>
 
-                    <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">
+                    <p className="mt-2 text-sm text-gray-500 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.
                     </p>
                 </div>
@@ -64,9 +64,9 @@ const Faq = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-xl font-semibold text-gray-700 dark:text-white">Is the cost of the appoinment covered by private health insurance?</h1>
+                    <h1 className="text-xl font-semibold text-gray-700 ">Is the cost of the appoinment covered by private health insurance?</h1>
 
-                    <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">
+                    <p className="mt-2 text-sm text-gray-500 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.
                     </p>
                 </div>
@@ -80,9 +80,9 @@ const Faq = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-xl font-semibold text-gray-700 dark:text-white">What is your cancellation policy?</h1>
+                    <h1 className="text-xl font-semibold text-gray-700 ">What is your cancellation policy?</h1>
 
-                    <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">
+                    <p className="mt-2 text-sm text-gray-500 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.
                     </p>
                 </div>
@@ -96,9 +96,9 @@ const Faq = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-xl font-semibold text-gray-700 dark:text-white">What are the parking and public transport options?</h1>
+                    <h1 className="text-xl font-semibold text-gray-700 ">What are the parking and public transport options?</h1>
 
-                    <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">
+                    <p className="mt-2 text-sm text-gray-500 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.
                     </p>
                 </div>

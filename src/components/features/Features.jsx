@@ -6,10 +6,10 @@ import {HiUserGroup} from 'react-icons/hi'
 const Features = () => {
   return (
     <div id='About'>
- <section className="m-4 md:m-8 dark:bg-gray-800 dark:text-gray-100 mt-24 mb-24">
+ <section className="m-4 md:m-8   mt-24 mb-24">
 	<div className="container mx-auto p-4 my-6 space-y-2 text-center mt-24 mb-24">
 		<h2 className="text-5xl font-bold">Centralize all your music-related activity in one place.</h2>
-		<p className="dark:text-gray-400">You can choose between being an artist, a band or an establishment, so you can access the benefits of each one.</p>
+		<p className="">You can choose between being an artist, a band or an establishment, so you can access the benefits of each one.</p>
 	</div>
 	<div className="container mx-auto grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-24 mb-24">
 		<div className="flex flex-col items-center p-4">
