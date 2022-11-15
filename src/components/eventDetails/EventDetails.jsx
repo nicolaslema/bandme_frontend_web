@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom';
 import { getAllEventInfo } from '../../api/getEventDetails';
+import {getAllEventImages} from '../../api/getEventImages';
 import EventProgressBar from './EventProgressBar';
 import EventInfoError from './EventInfoError';
 import EventInfo from './EventInfo';
@@ -9,8 +10,11 @@ const EventDetails = () => {
   
   const {id} = useParams()
   const [eventInfo, setEventInfo] = useState([]);
+  const [eventImage, setEventImage] = useState('');
+  const [profileImage, setProfileImage]  = useState('');
   const [loading, setLoading] = useState(true);
   const {error, setError} = useState(false);
+
   
   useEffect(()=>{
     
@@ -20,12 +24,22 @@ const EventDetails = () => {
       getAllEventInfo(id)
       .then(data =>{
         setEventInfo(data.data)
+
+        getAllEventImages(data.data).then(arr =>{
+          const response = JSON.parse(JSON.stringify(arr))
+          setEventImage(response[0][1])
+          setProfileImage(response[0][0])
+        }).catch(err => console.log(err))
+
         setLoading(false)
       })
       .catch((e)=>{
         console.error(e)
-        setError(true)
+        
       })
+
+
+      
 
     },2000);
 
@@ -52,9 +66,9 @@ const EventDetails = () => {
       time={eventInfo.time}
       description={eventInfo.description}
       street = {eventInfo.street}
-      image_url = {eventInfo.image_url}
+      image_url = {eventImage}
       street_number = {eventInfo.street_number}
-      profile_photo = {eventInfo.profile_photo}
+      profile_photo = {profileImage}
       first_name = {eventInfo.first_name}
       last_name  = {eventInfo.last_name}
     />
