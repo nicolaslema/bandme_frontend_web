@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { getAllEventInfo } from '../../api/getEventDetails';
 import {getAllEventImages} from '../../api/getEventImages';
 import EventProgressBar from './EventProgressBar';
@@ -12,12 +12,13 @@ const EventDetails = () => {
   const [eventInfo, setEventInfo] = useState([]);
   const [eventImage, setEventImage] = useState('');
   const [profileImage, setProfileImage]  = useState('');
-  const [loading, setLoading] = useState(true);
-  const {error, setError} = useState(false);
-
+  const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState(false);
+  let navigate = useNavigate();
   
   useEffect(()=>{
-    
+
+    setLoading(true)
     setTimeout(()=>{
      
       
@@ -36,9 +37,12 @@ const EventDetails = () => {
       .catch((e)=>{
         console.error(e)
         
+        setErrors(true)
+        navigate('/error');
+                
       })
 
-
+     
       
 
     },2000);
@@ -53,9 +57,9 @@ const EventDetails = () => {
     <div className='bg-bandme_dark'>
 
 
-    {
-      error ? <EventInfoError/> : " "
-    }
+    {/* {
+      errors ? <EventInfoError/> : " "
+    } */}
       
     {
       loading ? <EventProgressBar/> 
