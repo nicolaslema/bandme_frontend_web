@@ -51,7 +51,7 @@ const EventInfo = ({
 
           
             <div className="flex items-center mt-4 gap-8">
-            <img src={profile_photo} alt="profile_picture" className='w-24 rounded-full' />
+            <img src={profile_photo} alt="profile_picture" crossOrigin="anonymous" className='w-24 rounded-full' />
               <h1 className='font-Poppins text-lg'>{first_name} {last_name}</h1>
             </div>
 

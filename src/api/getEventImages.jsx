@@ -1,5 +1,5 @@
 const backendImagesUrl = process.env.REACT_APP_IMAGES 
-
+const backendProfileImagesUrl =  process.env.REACT_APP_IMAGES_PROFILE
 
 export const getAllEventImages = async (data) =>{
     
@@ -8,7 +8,7 @@ export const getAllEventImages = async (data) =>{
     if(data.profile_photo.indexOf("uploads") === -1){
        //ep2
     }else{
-        const fullProfileImageUrl = backendImagesUrl.concat(data.profile_photo);
+        const fullProfileImageUrl = backendProfileImagesUrl.concat(data.profile_photo);
         returnedArray.push(fullProfileImageUrl)
     } 
 
