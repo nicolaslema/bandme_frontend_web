@@ -73,6 +73,7 @@ const EventDetails = () => {
       profile_photo = {profileImage}
       first_name = {eventInfo.first_name}
       last_name  = {eventInfo.last_name}
+      province = {eventInfo.province}
     />
     } 
 

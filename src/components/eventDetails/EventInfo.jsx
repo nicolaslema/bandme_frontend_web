@@ -12,17 +12,21 @@ const EventInfo = ({
   description,
   street,
   street_number,
+  province,
   profile_photo,
   first_name,
   last_name,
   image_url}) => {
 
    
-
+    const mapUrl = 'https://www.google.com/maps/search/?api=1&query='+street+street_number+province
     useEffect(()=>{
       if (image_url === ''){
         image_url = wallEvent
       }
+
+
+     
   
     })  
 
@@ -57,8 +61,8 @@ const EventInfo = ({
 
 
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-              <div className="rounded-md shadow">
-                <p className="flex w-full items-center justify-center rounded-md border border-transparent bg-bandme_orange px-8 py-3 text-base font-medium text-white  md:py-4 md:px-10 md:text-lg">{date} 
+              <div className="rounded-md shadow ">
+                <p className="flex w-full items-center underline underline-offset-4 decoration-2 decoration-dotted justify-center rounded-md border border-transparent  px-8 py-3 text-4xl font-medium text-slate-800  md:py-4 md:px-10 md:text-lg">{date} 
                 <span className='ml-24'>{time}/hs</span>
                 
                 </p>
@@ -68,10 +72,12 @@ const EventInfo = ({
             </div>
 
 
-            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-              <div className="rounded-md shadow">
-                <p className="flex w-full items-center justify-center rounded-md border border-transparent bg-bandme_orange px-8 py-3 text-base font-medium text-white  md:py-4 md:px-10 md:text-lg">
-                  {street} - {street_number}
+            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start drop-shadow-2xl">
+              <div className="rounded-md drop-shadow-2xl ">
+                <p className="flex w-full  items-center justify-center rounded-md border border-transparent bg-orange-400 px-8 py-3 text-base font-medium text-black  md:py-4 md:px-10 md:text-lg">
+                <a style={{display: "table-cell"}} href={mapUrl} rel='noreferrer' target="_blank"> {street} - {street_number}-  {province}</a>
+                  
+                 
                 
                 
                 </p>
