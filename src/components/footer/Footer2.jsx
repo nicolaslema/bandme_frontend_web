@@ -16,7 +16,7 @@ const Footer2 = () => {
           <span className="text-base font-medium tracking-wide text-gray-900">
             Contact Us!
           </span>
-            <h1 className='text-2xl text-black font-Poppins'>Contact@bandme.com.ar</h1>
+            <h1 className='text-2xl text-black font-Poppins'>Bandme.assistance@gmail.com</h1>
           <p className="mt-4 text-sm text-gray-800 font-Poppins">
             Ask us any question!
           </p>

@@ -16,27 +16,28 @@ const Features = () => {
     <i className="text-5xl text-bandme_dark"><FaUser/></i>
 			<h3 className="my-3 text-3xl font-semibold">Musician</h3>
 			<div className="space-y-1 leading-tight">
-				<p>Similique quas ea veniam</p>
-				<p>Tempore quasi porro</p>
-				<p>Blanditiis aut mollitia ex</p>
+				<p>Share your music content and find places to play</p>
+				<p>Connect with other musicians</p>
+				<p>Look for bands that are looking for musicians</p>
+				<p>Publish events in which you are going to participate</p>
 			</div>
 		</div>
 		<div className="flex flex-col items-center p-4">
     <i className="text-5xl text-bandme_dark"><HiUserGroup/></i>
 			<h3 className="my-3 text-3xl font-semibold">Band / Group</h3>
 			<div className="space-y-1 leading-tight">
-				<p>Similique quas ea veniam</p>
-				<p>Tempore quasi porro</p>
-				<p>Blanditiis aut mollitia ex</p>
+				<p>Share your band's music content</p>
+				<p>Look for establishments looking for bands</p>
+				<p>Set member searches for your band</p>
+				<p>Publish events in which you are going to participate</p>
 			</div>
 		</div>
 		<div className="flex flex-col items-center p-4">
     <i className="text-5xl text-bandme_dark"><MdStoreMallDirectory/></i>
 			<h3 className="my-3 text-3xl font-semibold">Stablishment</h3>
 			<div className="space-y-1 leading-tight">
-				<p>Similique quas ea veniam</p>
-				<p>Tempore quasi porro</p>
-				<p>Blanditiis aut mollitia ex</p>
+				<p>Search for musicians or bands to play at your establishment</p>
+				<p>Publish events that you carry out and seek to promote</p>
 			</div>
 		</div>
 
